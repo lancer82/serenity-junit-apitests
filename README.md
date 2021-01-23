@@ -54,7 +54,7 @@ The report records the API calls and its response in a very readable format as s
 
 Each step in tests are very clearly documented for readability and debugging in case of failures.
 
-![Sample Report Steps](doce/Sample_Report_Steps.png)
+![Sample Report Steps](docs/Sample_Report_Steps.png)
 
 
 ### Additional configurations
