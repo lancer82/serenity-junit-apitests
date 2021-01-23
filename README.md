@@ -1,4 +1,4 @@
-# Java-Serenity-RestAssured-Cucumber-JUnit-Maven Sample API Automation Solution
+# Java-Serenity-RestAssured-JUnit-Maven Sample API Automation Solution
 [![CircleCI](https://circleci.com/gh/amalsgit/restassured-serenitybdd-junit.svg?style=svg)](https://circleci.com/gh/amalsgit/restassured-serenitybdd-junit)
 
 ## Introduction
@@ -29,7 +29,6 @@ src
           CommonQuestions           All common questions/validations across all the domain models
           CommonRequestSpec         Common Request Spec for the API calls
       + commonutilies               Common utility methods
-src
   +test
       + features                    Test cases files directory
           GetPostCommentTests.java  Class containing JUnit tests
