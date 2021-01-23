@@ -49,11 +49,12 @@ open target/site/serenity/index.html
 Reports can be seen in circleci, under the artifacts section `serenity/index.html`.
 
 The report records the API calls and its response in a very readable format as shown below.
-![Sample Report Image](docs/Sample_Report_Detail.png)
+
+![Sample Report Detail](docs/Sample_Report_Detail.png)
 
 Each step in tests are very clearly documented for readability and debugging in case of failures.
 
-![Sample Report Steps](https://user-images.githubusercontent.com/22020329/67158871-63982680-f35b-11e9-82ae-b5e6422167d3.png)
+![Sample Report Steps](doce/Sample_Report_Steps.png)
 
 
 ### Additional configurations
