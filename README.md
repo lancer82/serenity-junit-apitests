@@ -1,11 +1,14 @@
 # Java-Serenity-RestAssured-JUnit-Maven Sample API Automation Solution
-[![CircleCI](https://circleci.com/gh/amalsgit/restassured-serenitybdd-junit.svg?style=svg)](https://circleci.com/gh/amalsgit/restassured-serenitybdd-junit)
 
 ## Introduction
 
 This is a sample Rest API test solution for sample endpoints available in https://jsonplaceholder.typicode.com/. The published APIs represent a blog application where users can publish post and comment on them.
 
 Tests are written using a combination of SerenityBDD, RestAssured, Junit & Maven.
+
+| serenity-core | serenity-maven-plugin | Selenium version  |  RestAssured version |
+|---------------|-----------------------|-------------------|----------------------|
+| 2.3.12        | 2.3.12                | 3.141.59          | 4.3.2                |
 
 ## Framework & Design Considerations
 - Serenity BDD is a library that makes it easier to write high quality automated acceptance tests, with powerful reporting and living documentation features. It has strong support for both web testing with Selenium, and API testing using RestAssured.
@@ -14,7 +17,6 @@ Tests are written using a combination of SerenityBDD, RestAssured, Junit & Maven
 - Each domain package consist of an Action class where API actions are defined and another Question class where user questions/assertions are written.
 - These domain models are called from a step-definitions class which are in-turn called from BDD tests.
 - A test scenario to validate API response schema has been included for each endpoint in the respective feature file. The API spec for schema comparison is placed inside "schema" folder in test resources. The specs are generated from https://www.liquid-technologies.com/online-json-to-schema-converter.
-- Check out my other project(https://github.com/amalsgit/restassured-serenitybdd-junit-cucumber) if you are interested to have a look at how the same solution can be implemented with Cucumber in a BDD format.
 
 ### The project directory structure
 
@@ -45,10 +47,9 @@ Please run the below command from root directory to open the result after execut
 open target/site/serenity/index.html 
 ```
 Reports can be seen in circleci, under the artifacts section `serenity/index.html`.
-Here is the direct link to one of the build artifact: https://3-217046765-gh.circle-artifacts.com/0/home/circleci/restassured-serenitybdd-junit/target/site/serenity/index.html.
 
 The report records the API calls and its response in a very readable format as shown below.
-![Sample Report Image](https://user-images.githubusercontent.com/22020329/67158844-02705300-f35b-11e9-8147-51b1137dcec8.png)
+![Sample Report Image](docs/Sample_Report_Detail.png)
 
 Each step in tests are very clearly documented for readability and debugging in case of failures.
 
